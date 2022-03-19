@@ -3,7 +3,24 @@ package com.example.models;
 import java.util.Date;
 import java.util.List;
 
+
 public class Mail {
+	/*Here is an example of how to use the mail model in a controller. This is an actual implementation for a previous app and should act as an example of 
+	 * how to use email to email a user their password
+	 * 	@PostMapping(value="/forgot/password/{email}")
+	public ResponseEntity<String> checkPassword(@PathVariable(name="email") String email)
+		Optional<User> corUser = Optional.ofNullable(uServ.getUserByEmail(email));
+		
+			Mail mail = new Mail();
+	        mail.setMailFrom("exercisetrackingsystem@gmail.com");
+	        mail.setMailTo(email);
+	        mail.setMailSubject("Exercise Tracking App lost password");
+	        mail.setMailContent("Sorry " + corUser.get().getFirst_name() + " " + corUser.get().getLast_name() +" to hear you forgot your password.\n \n Your current password is: " + corUser.get().getPass() +
+	        		". \n \n To proceed to the login page, please use this link: http://localhost:4200/login");	 
+	        this.uServ.sendEmail(mail);	        
+			return ResponseEntity.status(201).body("Success");
+		
+	*/
 	private String mailFrom;
 	 
     private String mailTo;
