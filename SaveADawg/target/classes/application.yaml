@@ -1,1 +1,27 @@
+server:
+  port: 9065
+ 
+spring:
+  datasource:
+    url: jdbc:postgresql://arnbristersdb.ciybvwf5dpwc.us-east-2.rds.amazonaws.com:5432/saddatabase
+    username: exerciseuser
+    password: P4ssw0rd
+    driver-class-name: org.postgresql.Driver
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: exercisetrackingsystem@gmail.com
+    password: myPassword
+    protocol: smtp
+    tls: true
+    properties.mail.smtp:
+        auth: true 
+        starttls.enable: true
+        ssl.trust: smtp.gmail.com  
 
+  
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true 
+    hibernate:
+      ddl-auto: create
