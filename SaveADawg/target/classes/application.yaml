@@ -4,7 +4,7 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://arnbristersdb.ciybvwf5dpwc.us-east-2.rds.amazonaws.com:5432/saddatabase
-    username: exerciseuser
+    username: saduser
     password: P4ssw0rd
     driver-class-name: org.postgresql.Driver
   mail:
